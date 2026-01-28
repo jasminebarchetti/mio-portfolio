@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div className="animate-fadeIn">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 gradient-text">
-            Hi, I&apos;m Jasmine Barchetti 
+            Hi! I&apos;m Jasmine Barchetti 
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-8 font-light">
             Business Informatics
