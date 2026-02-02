@@ -6,28 +6,58 @@ const groupSteps = [
   {
     id: 1,
     title: "Problem Analysis",
-    description: "We analyzed how 94% of users misinterpret the tone of text messages, leading to anxiety and conflicts within chat",
+    description: `The project began by identifying a widespread and emotionally impactful problem: miscommunication in text-based group chats due to the lack of tone and emotional context. Short replies, delayed responses, sarcasm, and minimal punctuation are frequently misinterpreted, causing anxiety, stress, and unnecessary conflict—particularly among young adults who rely on messaging apps as their primary communication channel. 
+
+Through both secondary research (APA studies, communication statistics) and primary research (surveys and interviews with users aged 18–30), the team confirmed that:
+• Text-based communication has a higher rate of misunderstandings compared to voice or face-to-face interaction. 
+• Users often experience overthinking, emotional projection, and anxiety, especially when messages are vague or delayed. 
+• Existing coping strategies, such as emojis, voice notes, or over-explaining, are inefficient, cognitively demanding, or disruptive. 
+• Current tools (e.g., generic tone checkers) are not personalized, lack group-chat awareness, and do not prioritize privacy. `,
   },
   {
     id: 2,
     title: "Ideation",
-    description: "The concept is a WhatsApp extension designed to clarify the emotional tone of messages by color-coding text based on detected emotions.",
+    description: `The core concept that emerged is HueFeel, a privacy-conscious messaging extension designed to learn each user’s unique texting style and detect potential tone ambiguities.  
+
+The ideation process was guided by key principles:
+• Sender-focused feedback (“Tone Mirror”) to enable adjustments before sending. 
+• Non-intrusive design, avoiding pop-ups or judgmental labels. 
+• Personalization, prioritizing individual style over generic interpretations. 
+• User control and consent, ensuring transparency and trust. 
+
+This led to a clear value proposition: a tool that functions as “Grammarly for emotional tone in group chats” while also providing “Spotify Wrapped-style insights” for self-reflection. `,
   },
   {
     id: 3,
     title: "Development",
-    description: "The interface was developed using a phased and iterative, human-centered design approach to effectively address tone misinterpretation.",
+    description: `The development phase translated the concept into a functional prototype, primarily envisioned as a WhatsApp extension, supported by a robust UX and ethical framework. 
+
+Key development steps included:
+• Designing an onboarding process using a tone profile quiz to personalize emotional interpretation. 
+• Establishing a visual language with soft colors, minimal icons, and accessible contrast. 
+• Building core features: Tone Translator for visual clarification of emotional intent, Personalized color palettes, and Receiver-dependent tone filters. 
+• Implementing a privacy-first approach, with local processing and no hidden data storage. `,
   },
   {
     id: 4,
     title: "Iterations",
-    description: "After conducting a testing phase, we collected feedback from our testers and identified key improvements needed for the extension, including an improved UI design, personalized color options, and message filtering.",
+    description: `After conducting a testing phase with 18 users, we identified key improvements.  Feedback indicated that "Too much UI = Emotional Fatigue."  
+
+We iterated by:
+• Replacing intrusive pop-ups with subtle cues like thin colored borders. 
+• Introducing personalized color options to build user trust. 
+• Adding message filtering based on the receiver (Professional vs. Casual). `,
   },
   {
     id: 5,
     title: "Progression Toward The Final Prototype",
-    description: "The final prototype includes personalized emotion names and the 'HueFeel Wrapped' feature, designed to visualize communicative well-being and reduce digital stress.",
-  }
+    description: `Testing and user feedback guided multiple refinements to ensure the product aligned with users’ emotional needs.  
+
+Key final refinements included:
+• Reducing the color palette to softer, fewer tones to prevent cognitive overload. 
+• Replacing explicit AI suggestions with subtle, optional indicators like emotion initials. 
+• Finalizing the 'HueFeel Wrapped' feature, designed to visualize communicative well-being and reduce digital stress for long-term self-reflection. `,
+  },
 ];
 
 export default function HueFeelPage() {
@@ -44,12 +74,10 @@ export default function HueFeelPage() {
         <header className="mb-16">
           <div className="flex items-center gap-6 mb-6">
               <div className="w-20 h-20 relative flex-shrink-0">
-                {/* Il percorso "/" punta direttamente alla cartella public */}
                 <img 
                   src="/logo.png" 
                   alt="HueFeel Logo" 
                   className="w-full h-full object-contain"
-                  onError={(e) => console.log("Errore caricamento logo: controlla che logo.png sia in public/")}
                 />
               </div>
               <div>
@@ -62,7 +90,7 @@ export default function HueFeelPage() {
               </div>
           </div>
           <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
-            A team-based project focused on reducing digital miscommunication through color-based emotional cues.
+            A team-based project focused on reducing digital miscommunication through color-based emotional cues. 
           </p>
         </header>
 
@@ -76,9 +104,9 @@ export default function HueFeelPage() {
                   Phase 0{step.id}
                 </span>
               </div>
-              <p className="text-gray-600 mb-6 leading-relaxed text-lg">
+              <div className="text-gray-600 mb-6 leading-relaxed text-lg whitespace-pre-line">
                 {step.description}
-              </p>
+              </div>
               <div className="flex items-center gap-2 text-sm font-bold text-purple-500">
                  <span className="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span>
                  Detailed in PDF Deck
@@ -87,37 +115,28 @@ export default function HueFeelPage() {
           ))}
         </section>
 
-        {/* --- PROTOTYPE VIDEO SECTION --- */}
+        {/* Prototype Video Section */}
         <section className="mb-24">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 flex items-center gap-3">
             <span className="bg-purple-100 p-2 rounded-xl">🎬</span> Final Result: The Prototype
           </h2>
           <div className="aspect-video w-full rounded-[2rem] overflow-hidden shadow-2xl border-8 border-purple-50 bg-gray-900">
-            {/* Assicurati che svideo.mp4 sia in public/ */}
-            <video 
-              controls 
-              className="w-full h-full object-cover"
-            >
+            <video controls className="w-full h-full object-cover">
               <source src="/svideo.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
           <p className="mt-6 text-center text-gray-400 italic text-sm font-medium">
-            Demo of the HueFeel extension and user interface
+            Demo of the HueFeel extension and user interface 
           </p>
         </section>
 
         {/* PDF Download Section */}
         <div className="p-10 bg-gradient-to-br from-purple-600 via-purple-700 to-indigo-800 rounded-[2.5rem] text-white text-center shadow-2xl relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-             <div className="absolute top-[-10%] left-[-10%] w-64 h-64 bg-white rounded-full blur-3xl"></div>
-          </div>
-
           <h2 className="text-3xl font-bold mb-4 relative z-10">Want to dive deeper?</h2>
           <p className="mb-10 opacity-90 text-lg max-w-xl mx-auto relative z-10">
-            Check out the full documentation including statistics, user testing results, and our Lean Canvas.
+            Check out the full documentation including statistics, user testing results, and our Lean Canvas. 
           </p>
-          
           <a 
             href="https://drive.google.com/file/d/1gR73WIqVsO5MXWego_8tiIDBcHAaccCK/view?usp=sharing" 
             target="_blank" 

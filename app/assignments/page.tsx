@@ -13,14 +13,14 @@ const myAssignments = [
   {
     id: 2,
     title: "HCI Assignment 2 - Discover and New Ideas",
-    description: "This assignment examines personal websites with good and poor communication to develop a clear understanding of best practices and common issues, helping us shape the design of our own website.",
+    description: "This assignment examines personal websites with good and poor communication to develop a clear understanding of best practices and common issues, helping us shape the design of our own website. This document examines the effectiveness of website communication in conveying information and engaging users. Websites that communicate well typically combine clear layouts, intuitive navigation, and interactive elements to guide users and highlight key content. In contrast, sites with poor communication often feature outdated designs, cluttered structures, or unclear navigation, which hinder user understanding and engagement. Effective web communication, therefore, relies on clarity, consistency, and user-centered design principles to ensure a professional and accessible online experience.",
     fileUrl: "/assignments/HCI2.pdf", 
     date: "2025/2026"
   },
 
   {
     id: 4,
-    title: "HCI Assignment 3 - Personal Website",
+    title: "HCI Assignment 3 & 4 - Personal Website",
     description: "This assignment presents my personal website as a step in my HCI journey. It reflects a professional yet approachable version of myself as a Business Informatics student focused on Digital Marketing. The design emphasizes clarity, simplicity, and usability through a clean layout, minimal color palette, and clear navigation. A key challenge was keeping the site simple but complete, which I solved by limiting it to three main pages, using ample white space, and selecting a calm accent color.",
     fileUrl: "/assignments/hci4.pdf", 
     date: "2025/2026"
@@ -28,7 +28,7 @@ const myAssignments = [
   {
     id: 5,
     title: "HCI Assignment 4 - User Feedback",
-    description: "I collected feedback from four users: Recruiters, Marketing Managers, Collaborators, and Professors to see how my website communicates my skills and identity. Based on their insights, I improved the CTA visibility, added a professional sub-headline, increased ticker contrast, and made fonts consistent, making the site clearer, easier to navigate, and more approachable.",
+    description: "I collected feedback from four users: Recruiters, Marketing Managers, Collaborators, and Professors to see how my website communicates my skills and identity. Based on their insights, I improved the CTA visibility, added a professional sub-headline, increased ticker contrast, and made fonts consistent, making the site clearer, easier to navigate, and more approachable. After reflecting on the updates, I realized I wanted to create something different, prompting a decision to restart the website and explore a new direction.",
     fileUrl: "/assignments/Pw.pdf", 
     date: "2025/2026"
   }
