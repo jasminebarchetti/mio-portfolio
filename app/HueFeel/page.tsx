@@ -57,7 +57,7 @@ export default function HueFeelPage() {
                   Group Project: HueFeel
                 </h1>
                 <p className="text-purple-400 font-bold tracking-widest uppercase text-sm mt-1">
-                  Interaction Design 2024/25
+                  HUMAN COMPUTER INTERACTION 2025/2026
                 </p>
               </div>
           </div>
