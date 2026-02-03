@@ -25,7 +25,7 @@ export default function About() {
               <div className="relative w-64 h-64 rounded-full bg-gradient-to-br from-pink-500 via-purple-500 to-blue-500 p-1 overflow-hidden shadow-2xl">
                 <div className="w-full h-full rounded-full bg-white overflow-hidden flex items-center justify-center">
                   <img 
-                    src="/profile.png" 
+                    src="/foto.png" 
                     alt="Jasmine Profile" 
                     className="w-full h-full object-cover"
                   />
